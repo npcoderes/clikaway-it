@@ -79,6 +79,7 @@
             border: 1px solid #ccc;
             border-bottom-width: 2px;
             transition: all 0.3s ease;
+            
         }
 
         form .gender-details .gender-title {
@@ -142,6 +143,10 @@
 
             background: linear-gradient(135deg, #71b7e6, #9b59b6);
         }
+        span{
+            color: red;
+             margin: 10px 0;
+        }
     </style>
 </head>
 
@@ -149,32 +154,44 @@
 
     <div class="container">
         <div class="title"> Registration</div>
-        <form action="" class="user-details">
+        <form action="#" class="user-details">
             <div class="input-box">
-                <label for="Full-name">Full Name</label>
-                <input type="text" name="Full-name">
+                <label for="Full-name" >Full Name</label>
+                <input type="text" name="Full-name" id="fname">
+                <span class="sf"></span>
             </div>
             <div class="input-box">
                 <label for="Uname">Username</label>
-                <input type="text" name="Uname">
+                <input type="text" name="Uname" id="uname">
+                <span class="suname"></span>
             </div>
             <div class="input-box">
                 <label for="Email">Email</label>
-                <input type="text" name="Email">
+                <input type="text" name="Email" id="mail">
+                <span class="semail"></span>
             </div>
             <div class="input-box">
                 <label for="Phone-num">Phone Number</label>
-                <input type="text" name="Phone-">
+                <input type="text" name="Phone-" id="num">
+                <span class="snum"></span>
+
+            </div>
+  
+            <div class="input-box">
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass">
+                <span id="spas"></span>
 
             </div>
             <div class="input-box">
-                <label for="pass">Password</label>
-                <input type="password" name="pass">
+                <label for="cpass">Confirm Password</label>
+                <input type="password" name="cpass" id="cpass">
+                <span id="scpas"></span>
 
             </div>
             <div class="input-box">
                 <label for="dob">D-O-B</label>
-                <input type="date" name="dob">
+                <input type="date" name="dob" id="dob" >
                 
 
             </div>
@@ -184,7 +201,7 @@
                 <div class="line"></div>
                 <div class="catgory-con">
                     <div class="category">
-                        <input type="radio" name=" gender" value="" class=" dot" id="dot-1">
+                        <input type="radio" name=" gender" value="" class=" dot" id="dot-1" >
                         <label for="Male" class="one dot"> Male</label>
                     </div>
                     <div class="category">
@@ -195,12 +212,14 @@
                         <input type="radio" name=" gender" value="" class="dot" id="dot-3">
                         <label for="other" class="three"> Other</label>
                     </div>
+
                 </div>
+                <span class="gmsg"></span>
 
 
             </div>
             <button>
-                <input type="submit" value="Register" id="sub">
+               Register
             </button>
 
         </form>
@@ -209,7 +228,7 @@
 
 
 
-
+   <script src="validate.js"></script>
 </body>
 
 </html>
